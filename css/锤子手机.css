@@ -1,0 +1,512 @@
+/* 代码初始化 */
+body,
+div,
+p,
+span,
+a,
+img,
+input,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+strong,
+i,
+em {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+img {
+    border: 0px none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    border: 0px none;
+    outline: 0px none;
+}
+
+body {
+    background-color: #ededed;
+    font: 12px/100% "微软雅黑";
+}
+
+h1,
+h2,
+h3,
+h4,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.w {
+    width: 1220px;
+    margin: 0px auto;
+}
+
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1px;
+}
+
+
+
+
+/* top的css代码 */
+.top {
+    width: 100%;
+    height: 99px;
+    border: 1px solid #8f8f8f;
+    background-color: #0e0e0e;
+}
+
+.content {
+    height: 99px;
+    line-height: 50%;
+    position: relative;
+}
+
+.top .logo {
+    position: absolute;
+    top: 25px;
+}
+
+.top .logo a {
+    width: 40px;
+    height: 40px;
+    background: url("../images/logo.png");
+    display: block;
+    text-indent: -999px;
+}
+
+.top .menu {
+    position: absolute;
+    left: 240px;
+
+}
+
+.top .menu li {
+    font-size: 14px;
+    line-height: 99px;
+    margin-right: 50px;
+    float: left;
+}
+
+.top .menu li.line {
+    width: 1px;
+    height: 14px;
+    background-color: #242424;
+    margin-left: -3px;
+    margin-top: 43px;
+}
+
+.top .menu li a {
+    color: #ccc;
+}
+
+.top .icon {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 38px;
+    right: 10px;
+}
+
+.top .icon .personal {
+    width: 22px;
+    height: 20px;
+    background: url("../images/account-icon.png") top center ;
+    position: absolute;
+}
+
+.top .icon .buycar {
+    width: 22px;
+    height: 20px;
+    background: url("../images/account-icon.png");
+    background-position: 0px 22px;
+    position: absolute;
+    left: 50px;
+}
+
+.top .icon .tpis {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #9d9d9d;
+    position: absolute;
+    right: 0px;
+    color: #fff;
+}
+
+
+
+/* nav的css代码 */
+.nav {
+    height: 88px;
+    line-height: 88px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.nav li:first-child a {
+    margin-left: 10px;
+    color: #666676;
+    font-weight: 700;
+}
+
+
+/* main的css代码 */
+
+.main .banner img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.main .periphery {
+    width: 100%;
+    height: 630px;
+    margin-bottom: 30px;
+}
+
+.main .guanggao {
+    width: 1221px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+
+.main .guanggao a {
+    float: left;
+    width: 305px;
+    height: 200px;
+}
+
+.main .guanggao a:first-child{
+    background: url("../images/smartisan.png");
+}
+
+.main .guanggao a:nth-child(2){
+    background: url("../images/ganghuapoli.jpg");
+}
+
+.main .guanggao a:nth-child(3) {
+    border-left: 1px solid #dbdbdb;
+    background: url("../images/Txue.jpg");
+}
+
+.periphery .guanggao a:last-child {
+    background: url("../images/pro.jpg");
+}
+
+.periphery .product {
+    width: 1220px;
+    height: 423px;
+    border: 1px solid #ccc;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 0px none;
+    overflow: hidden;
+}
+
+.periphery .product li {
+    float: left;
+    width: 304px;
+    height: 423px;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+}
+
+.periphery .product li .photo {
+    width: 206px;
+    height: 206px;
+    margin-top: 46px;
+    margin-left: 49px;
+    display: block;
+    /* 因为父盒子浮动，子盒子块级化不会包含塌陷 */
+    margin-bottom: 5px;
+}
+
+.periphery .product li:first-child .photo {
+    background: url("../images/txe2.png");
+}
+
+.periphery .product li:nth-child(2) .photo {
+    background: url("../images/book.jpg");
+}
+
+.periphery .product li:nth-child(3) .photo {
+    background: url("../images/note.jpg");
+}
+
+.periphery .periphery .product li:last-child .photo {
+    background: url("../images/erji.jpg");
+}
+
+.main .periphery .product .content {
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    display: block;
+    color: #000;
+}
+
+.main .periphery .product .price {
+    font-size: 18px;
+    color: #f00;
+    display: block;
+    margin-top: 62px;
+}
+
+
+
+.main .selected {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* border-right: 0px none; */
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.main .selected .title {
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #666;
+    /* border-right: 1px solid green; */
+    padding-left: 30px;
+    /* border-radius: 10px; */
+}
+
+.main .selected  li {
+    float: left;
+    width: 304px;
+    height: 428px;
+    border-top: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    text-align: center;
+}
+
+.main .selected .phone li .photo {
+    width: 206px;
+    height: 206px;
+    margin-top: 46px;
+    margin-left: 49px;
+}
+
+
+.main .selected  li:first-child {
+    width: 609px;
+    height: 427px;
+}
+
+.main .selected  li:first-child a {
+    width: 609px;
+    height: 427px;
+    background: url("../images/jianguopro.png");
+    display: block;
+}
+
+.main .selected .photo {
+    width: 206px;
+    height: 206px;
+    margin-top: 50px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.main .selected .content {
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+    color: #000;
+}
+
+.main .selected .price {
+    font-size: 18px;
+    color: #f00;
+    display: block;
+    margin-top: 62px;
+}
+
+.main .selected  li:nth-child(2) i {
+    background: url("../images/rederji.png");
+}
+
+.main .selected  li:nth-child(3) i {
+    background: url("../images/phone.jpg");
+    border-right: 0px none;
+}
+
+.main .selected  li:nth-child(4) i {
+    background: url("../images/chongdianxian.jpg")
+}
+
+.main .selected  li:nth-child(5) i {
+    background: url("../images/chongdianqi.jpg");
+}
+
+.main .selected  li:nth-child(6) i {
+    background: url("../images/yidongdianyuan.jpg");
+}
+
+.main .selected  li:last-child i {
+    background: url("../images/baohumo.jpg");
+    border-right: 0px none;
+}
+
+
+.main .dynamic {
+    height: 260px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.main .dynamic .title {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    padding-left: 30px;
+    color: #666;
+}
+
+.main .dynamic .product li {
+    width: 304px;
+    height: 199px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+
+.main .dynamic .product li a {
+    width: 304px;
+    height: 199px;
+    display: block;
+}
+
+.main .dynamic .product li:first-child a {
+    background: url("../images/fabuhui.png");
+    background-size: contain;
+}
+
+.main .dynamic .product li:nth-child(2) a {
+    background: url("../images/smartisanos.jpg");
+    background-size: contain;
+}
+
+.main .dynamic .product li:nth-child(3) a {
+    background: url("../images/idea.jpg");
+    background-size: contain;
+}
+
+.main .dynamic .product li:last-child a {
+    background: url("../images/onestep.jpg");
+    background-size: contain;
+}
+
+
+/* bottom的css代码 */
+
+.bottom {
+    width: 100%;
+    height: 233px;
+    margin-top: 60px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.bottom-nav {
+    height: 233px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom .bottom-list ul {
+    margin-right: 102px;
+    float: left;
+}
+
+.bottom .bottom-list {
+    position: absolute;
+    top: 99px;
+}
+
+.bottom .bottom-list li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.bottom .bottom-list li:first-child {
+    margin-top: 14px;
+}
+
+.bottom .number {
+    font-size: 28px;
+    color: #646464;
+    position: absolute;
+    top: 100px;
+    right: 0px;;
+}
+
+.bottom .bottom-nav .time {
+    color: #c3c3c3;
+    position: absolute;
+    right: 0px;
+    top: 136px;
+}
+
+.bottom .help {
+    width: 102px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 36px;
+    right: 0px;
+}
+
+.bottom .help a {
+    color: #5079d9;
+}
